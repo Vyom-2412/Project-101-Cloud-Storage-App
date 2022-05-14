@@ -19,11 +19,11 @@ class TransferData:
                     dbx.files_upload(f.read(), dropbox_path, mode=WriteMode('overwrite'))
 
 def main():
-    access_token = 'sl.BHjLj8leRdZyObgqa7vo4kSuOG-Fb9bembdJ4EG17DESaAIDOloHYFglrO1jl_lQj67FsBXB0YyzSHrhpiDhDvMeSvLi75421vRXPQxPLRbPriIWrQQvq9PCHF9VM0kHPOzFYIhAvY0'
+    access_token = 'sl.BHixWLH4b0WHcu9YnEiQeYGpPBgOYgqITOx5QkcrQPv6cY9Zuxt1qFa34EXf1d3oFuIAAEB2WmtGF2yjWLj4aoSBUEI6g2A-6ZlhCX1KmATJrb4XTP0dB2G_PZZ3CRXtwmKIVFxg3Yo'
     transferData = TransferData(access_token)
 
-    file_from = str(input("Enter the folder path to transfer : -"))
-    file_to = input("enter the full path to upload to dropbox:- ")
+    file_from = 'E:/Python/Data Sets/'
+    file_to = '/'
 
     transferData.upload_file(file_from,file_to)
     print("file has been moved!")
